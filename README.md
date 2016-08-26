@@ -2,7 +2,13 @@ ejs-render-middleware
 ---
 
 1. Renders ejs file right away and puts result to `req.rendered`.
-2. When in production, constantly caches contents of ejs file(s), else checks for changes and always processes fresh version of it
+2. When in production, constantly caches contents of ejs file(s), else checks for changes and always rerenders fresh version of it
+
+# Installation
+
+```bash
+npm i -S ejs-render-middleware
+```
 
 ## Usage
 

@@ -1,7 +1,7 @@
 {
   "name": "ejs-render-middleware",
   "description": "Express-compatible EJS middleware that renders, caches result and watches for changes",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": {
     "name": "Nick Gavrilov",
     "email": "artnikpro@gmail.com"
@@ -13,6 +13,10 @@
     "url": "https://github.com/ilearnio/ejs-render-middleware/issues"
   },
   "homepage": "https://github.com/ilearnio/ejs-render-middleware",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilearnio/ejs-render-middleware.git"
+  },
   "keywords": [
     "ejs",
     "express",
@@ -24,10 +28,6 @@
     "index.js",
     "README.md"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ilearnio/ejs-render-middleware.git"
-  },
   "dependencies": {
     "read-file-and-cache": "^1.0.2"
   }

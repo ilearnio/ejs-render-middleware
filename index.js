@@ -7,11 +7,11 @@ module.exports = function (options) {
 
     // Cache forever if it's a production server, else check
     // for changes and always return fresh content
-    var content = readFileAndCacheSync(options.path, options.cache || {
+    var content = readFileAndCacheSync(opts.path, opts.cache || {
       never_update: process.env.NODE_ENV === 'production'
     })
 
-    req.rendered = ejs.render(content, opts, options.options)
+    req.rendered = ejs.render(content, opts.data, opts.options)
 
     next()
   }
